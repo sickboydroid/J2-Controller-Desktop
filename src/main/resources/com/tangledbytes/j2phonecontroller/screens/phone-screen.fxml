@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="627.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/19"
+            fx:controller="com.tangledbytes.j2phonecontroller.controllers.PhoneScreenController">
+    <ImageView fx:id="imageViewScreenshot" fitHeight="600.0" fitWidth="360.0" layoutX="212.0" layoutY="14.0"
+               onMouseClicked="#ssClicked" pickOnBounds="true" preserveRatio="true"/>
+    <Button layoutX="47.0" layoutY="336.0" mnemonicParsing="false" onAction="#pause" prefHeight="26.0" prefWidth="124.0"
+            text="Pause"/>
+    <Slider fx:id="sliderSpeed" layoutX="79.0" layoutY="59.0" majorTickUnit="5.0" min="10.0" minorTickCount="1"
+            orientation="VERTICAL" prefHeight="261.0" prefWidth="54.0" showTickLabels="true" showTickMarks="true"
+            value="50.0"/>
+    <Label layoutX="61.0" layoutY="31.0" text="Speed:">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Label fx:id="labelSpeed" layoutX="119.0" layoutY="31.0" prefHeight="18.0" prefWidth="31.0" text="50">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Button layoutX="15.0" layoutY="376.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="26.0"
+            prefWidth="82.0" text="Back"/>
+    <Button layoutX="116.0" layoutY="376.0" mnemonicParsing="false" onAction="#onClickRecents" prefHeight="26.0"
+            prefWidth="81.0" text="Recents"/>
+    <Button layoutX="68.0" layoutY="409.0" mnemonicParsing="false" onAction="#onClickHome" prefHeight="26.0"
+            prefWidth="82.0" text="Home"/>
+</AnchorPane>
